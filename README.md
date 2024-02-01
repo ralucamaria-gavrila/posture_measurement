@@ -4,7 +4,13 @@ This project was created as a HI-fi prototype for the HCI course that took place
 ## Functionality
 The purpose of this project is to measure a person's posture using Python, Tensorflow, Mediapipe and OpenCv. The project can be run using a Raspberry Pi, as I used TensorflowLite which is suitable for this type of hardware. For best measurements, a webcam should be located on either the left or right side of the person, on a tripod. An external speaker is needed too. 
 
-The way this works is by identifying the 33 keypoints using Tensorflow and Mediapipe. See below a picture with all keypoints identified by Tensorflow. Out of these keypoints, I used the ear, shoulder and hip and calculated the angles between these points, as they are defined using **x**, **y** coordinates. When the angle is between a threshold that shows that the person sits slouched, a message is played such that the person should improve their posture. In case the person has a correct posture for a certain amount of time, a positive message is played, congratulating the person. The program has also audio messages for setting up the camera, in case the camera is positioned too high or too low and the person is not perfectly visible. 
+![Screenshot 2024-02-01 at 13 57 58](https://github.com/ralucamaria-gavrila/posture_measurement/assets/57534552/6c9a5942-eb3b-428f-95e7-ee33d6aeee33)
+
+The way this works is by identifying the 33 keypoints using Tensorflow and Mediapipe. See below a picture with all keypoints identified by Tensorflow. 
+
+<img width="392" alt="mediapipe_key_points" src="https://github.com/ralucamaria-gavrila/posture_measurement/assets/57534552/94e723f5-62d5-42a6-8c2c-d670130ceabf">
+
+Out of these keypoints, I used the ear, shoulder and hip and calculated the angles between these points, as they are defined using **x**, **y** coordinates. When the angle is between a threshold that shows that the person sits slouched, a message is played such that the person should improve their posture. In case the person has a correct posture for a certain amount of time, a positive message is played, congratulating the person. The program has also audio messages for setting up the camera, in case the camera is positioned too high or too low and the person is not perfectly visible. 
 
 ## Other tools needed
 ### For macOS
